@@ -73,9 +73,11 @@
                 <div class="list-group list-group-flush">
                     <a href="img/ProjectBrief2.pdf" class="list-group-item list-group-item-action">Project Brief</a>
                     <a href="img/Contract.pdf" class="list-group-item list-group-item-action">Consent Narrative</a>
-          <a href="img/Jeff.jpg" class="list-group-item list-group-item-action">Persona - Chef Jeff</a>
-          <a href="img/Megan.jpg" class="list-group-item list-group-item-action">Persona - Meal Manager Megan</a>
-          <a href="img/map.JPG" class="list-group-item list-group-item-action">Experience Map</a>
+                    <a href="img/Jeff.jpg" class="list-group-item list-group-item-action">Persona - Chef Jeff</a>
+                    <a href="img/Megan.jpg" class="list-group-item list-group-item-action">Persona - Meal Manager Megan</a>
+                    <a href="img/map.JPG" class="list-group-item list-group-item-action">Experience Map</a>
+                    <a href="https://docs.google.com/document/d/15stjkBj8PhXcsKhKzyF9KNZs82vDj50dLF2ugyeM1D4/edit?usp=sharing" class="list-group-item list-group-item-action">Script</a>
+                    <a href="https://docs.google.com/document/d/1cnsL3HrRHrQsU6aEGXtTmimi-hmBMmPc__KkHIIqM_A/edit?usp=sharing" class="list-group-item list-group-item-action">Error</a>
                 </div>
             </div>
 
@@ -101,7 +103,227 @@
             <div class="row" id="need">
       <ARTICLE class="col-xs-12">
         <h1>Design Development</h1>
-        
+        <hr>
+        <h2>Key design aspects</h2>
+        <p>We are creating a tablet app to assist in tracking the inventory for small-college dining hall staff.
+        Images and videos of our prototype are available at the bottom of the report.
+        While we were designing our prototype, we kept in mind a mobile design guide - particularly Google’s Material Design guide. Many features that we created will be implemented using features available in the Material Design framework.</p>
+        <p>The app’s main page opens to ingredient search.</p>
+        <p><b>Ingredient Search:</b></p>
+        <ul>
+            <li>Center screen with ingredient results</li>
+                <ul>
+                    <li>Each food ingredient is a card, that can be expanded to display more information about that food</li>
+                     <ul>
+                        <li>Allowed user to focus on each item, and easily understand that each food was unique</li>
+                    </ul>                
+                    <li>Top level information that is always displayed, even when the card is collapsed, includes:</li>
+                    <ul>
+                        <li>Food name</li>
+                        <li>Blank entry box for entering the current amount of the food, units taken from information in expanded card.</li>
+                        <li>Number that signifies how much of that food you need to be “fully stocked”</li>
+                        <li>Output field that subtracts the current amount from the expected amount and displays the difference, which is how much you need to order</li>
+                        <li>These are the basics of taking inventory. We wanted the chef to be able to type in how much of the product, and get a quick look at how much he would have to order.</li>
+                    </ul>
+                    <li>In-depth information that is displayed when the card is expanded includes:</li>
+                    <ul>
+                        <li>Purveyor name</li>
+                        <li>Nutrition info</li>
+                        <li>Dietary restriction information</li>
+                        <li>Unit</li>
+                        <li>Notes</li>
+                        <li>Filters attached to this food</li>
+                        <li>Edit button, which allows the user to edit any of this information</li>
+                        <li>All of this information was information used by our executive chef to order items from his various purveyors. We wanted to share this information here, in order to have that information get saved to the form created by the application. We wanted the chef to have the flexibility to add notes and change information on the fly.</li>
+                    </ul>
+                </ul>
+            <li>Sidebar, with access to filters and past order history, and expand all/collapse all buttons</li>
+                <ul>
+                    <li>Filters include defaults and option to add a new filter</li>
+                    <ul>
+                        <li>Checking the box next to a filter filters the cards in the ingredient search section to only include foods with that filter</li>
+                        <li>Multiple filters can be checked, and their results will be combined</li>
+                        <li>New filter button brings up a dialog that lets you name the filter and add what foods should be in the filter</li>
+                        <li>Smart computer things suggest foods to be in new filter</li>
+                        <li>Increases the ease in which the chef can quickly find an item. With the ability to add filters, he can see what is in his current inventory of a certain filter.</li>
+                    </ul>
+                    <li>Past order history replaces ingredients on screen with the past orders</li>
+                    <li>Expand all expands all cards that are not already expanded</li>
+                    <ul>
+                        <li>Allows chef to quickly open up and scan cards data, allows for more information at faster rate.</li>
+                    </ul>
+                    <li>Collapse all collapses all cards that are not already collapsed</li>
+                    <ul>
+                        <li>Allows chef to quickly neaten up his card data, all meant to make it easier to read.</li>
+                    </ul>
+                </ul> 
+            <li>Search bar, with sorting options and search box</li>
+                <ul>
+                    <li>Date- allows the user to see past inventories</li>
+                    <ul>
+                        <li>Allows chef to quickly look for items and determine availability.</li>
+                    </ul>
+                </ul>
+            <li>Menu Button</li>
+                <ul>
+                    <li>Save and export button</li>
+                    <ul>
+                        <li>Brings up a save dialog, along with the phone-specific export file format choice</li>
+                        <li>Jeff usually takes manual, pen and paper, and then brings it to the computer. To reduce the need to take the paper and manually input by hand, he can send the file to himself and other members of his staff, like manager Meagan. The real life chef was nervous about making an error when copying the inventory. This reduces that error and makes it easy to share. </li>
+                    </ul>
+                    <li>Add ingredient button</li>
+                    <ul>
+                        <li>Brings up option to import food information or manually enter it</li>
+                        <li>Allows manual entry of food</li>
+                        <ul>
+                            <li>Food name</li>
+                            <li>Nutrition information</li>
+                            <li>Purveyor</li>
+                            <li>Expected amount for full stock</li>
+                            <li>Notes</li>
+                            <li>Food category (info taken from filters)</li>
+                            <li>Chef  needed to add new items to this new digital interface, this gave him the means to add his new data.</li>
+                        </ul>
+                        <li>Import .csv with food data</li>
+                        <ul>
+                            <li>Can support multiple entries at once</li>
+                            <li>Created Excel spreadsheet, by sending a .csv file, he can collect the data and open it in any editing software.</li>
+                        </ul>
+                    </ul>
+                </ul>
+        </ul>
+        <h2>Why we made these decisions (Observations from user interviews)</h2>
+        <p>Our chefs and managers needed an easy to use, easy to manage system. They were using paper and pen because it was comfortable- all it took as a jotted note, and they could bring it to a computer and upload it into an excel spreadsheet. With that in mind, all of the points of design were focused on making it easy to use for someone without much experience using tablets.  The process has to be around the same complexity of manual input.</p>
+        <p>In terms of testing functionality, we started our interviews with fellow Olin students by asking them to imagine that they were running the Olin dining hall and taking inventory. We wanted to see if they could figure out how to use the prototype without any direction, by asking them to complete a task and observing how they completed it. The script that we more-or-less followed for these interview can be found on the side bar. The first few interviews did not go as smoothly as we planned, as we quickly discovered features that we needed to implement, additional dialogues that we needed to create endpoints for, and buttons that were unintuitive.</p>
+        <h2>Comparison to Alternatives</h2>
+        <hr>
+        <h3>Shortcomings</h3>
+        <p>There are a few features that we want to include which we were unable to fully design/test with users. This includes the order history feature, which we have a few concepts for but not a final design. We were unable to include these designs, because we wanted to work on the ease of use. The most important thing for this type of inventory app is that it fit flawlessly into the workflow the kitchen. Doing inventory by hand was easy, but incredibly time consuming. By reducing the amount of time it takes to complete the filling out of the inventory, we got closer to our goal of developing an interaction that makes a more productive and successful experience. This meant not fully implementing data inventory over time. Some other shortcomings of the app include the fact that the application does not meld perfectly with the other paper and pen items of the kitchen. While this application is great for taking down information, it doesn’t fully connect the process of ordering to the application. All you can do is make a new file that tells you what you need to add to your cart (in another application). It reduces the amount of work needed by the chef or manager but doesn’t fully remove the pain point. </p>
+        <h3>Distractions</h3>
+        <p>May have needed menu creator at olin, but that space is already occupied. Wanted to approach problem with a wider user base, ie. inventory management is a more universally seen pain point.</p>
+        <p>As we were working on this design, we found that we had to distance ourselves from the creation of menu-making software. Menu creation is a pain point that we identified in our user group and were interested in designing a solution for, but we found that the project didn’t fit into our idea of what our HFID project should be. We do think that it would still be interesting and helpful if created. Another rationale we had in choosing the project we did is that we wanted to create a tablet app - which means that the user would most likely be moving around while using it, as tablets are inherently mobile devices. We did not see menu creation as something that would be done “on the go”. While the plan we decided to go with the inventory manager, due to comments made by our chefs and manager, we know that it can integrate into the already existing workflow. It will help the pain point of manual input and is a smaller, more manageable problem for this project. </p>
+        <h3>Prototype</h3>
+        <p><a href="https://drive.google.com/file/d/0B-8PhiFYfG4FNHdlYm0xSDY4blE/view?usp=sharing">Here</a> is the link to our video showcasing this stage’s final prototype. </p>
+        <img src="img/D1.jpg" width="600" height="350">
+        <p>This is the first version of our application. It is important to know that we had the card itemized list from the beginning. However we did not know what was going to be on the left side-bar. In addition to that we prominently displayed a plus sign button, to indicate the ability to add cards. However, there was no ability to save the list to a document- this needed to be added for our user.</p>
+        <img src="img/D2.jpg" width="600" height="350">
+        <p>Our first paper prototype, as you can see it is incredibly basic in design and functionality. It used projector film in order to elicit the idea of tactility. However, it was easily destroyed and people were having trouble with the idea of reordering and allowing the computer to re order. We changed the design going forward.  After a few user tests, we also discovered that we needed to find a way to share the document.  </p>
+        <img src="img/D3.jpg" width="600" height="350">
+        <p>Final Design. Opening menu screen. The individual tiles let people drag and drop the cards. It gave people a better experience in terms of tactility. In addition to that, there was a menu button that allowed people to save and send their file. Plus they can better filter and add manipulate their data. </p>
+        <img src="img/D4.jpg" width="600" height="350">
+        <p>Bottom Button: <br>
+        Function: then we moved to a plus button, that when clicked lead to another menu. This was confusing to our users because they expected to be prompted to add something, not just look at more options. Over time we realized that the plus did not inform the user what we wanted them to know. We switched to a design inspired by material by google. We added triple dots in a circle to insinuate that there was more for the user to explore. </p>
+        <p>Top Buttons: <br>
+        Function: at first we had no buttons, other than the plus. We realized that there was a need for the user to do more with the information in the application, then just keep it on the tablet. We needed a way to show where to add, save, and that the menu was open. We did this at first by making save a check mark. However, it was unclear what that meant. We switched to the typical floppy disk, to reduce confusion in function. Add was turned into a plus sign, in order to make it straight forward and make the design less word based. </p>
+        <p>Testing Material<br>
+        Why: At first we just used a plus button on a projector sheet. We thought it would be good for users to press the sheet, however it rubbed off on the testers fingers, and was continuously re-drawn. We then moved to post it notes. However over time they were inconsistent in its ability to stick. We removed that variability by making it index cards. </p>
+        <h2>Scenarios :</h2>
+        <p>We developed 3-4 scenarios that would allow our users to work in the application. They ended up being scenarios that we ended up using in order to prompt testing.To understand why we were even going through this process, we adapted our scenarios into three different situations where the tester and user would need to use the application. </p>
+        <b>Co-Design Scenarios</b>
+        <ul>
+            <li>Adding item to inventory</li>
+            <ul>
+                <li>Jeff hears from a lot of students that he should add shawarmas to the menu but he doesn’t have the necessary meat to make them. While out in the kitchen he decides to add the meat to the inventory but doesn’t want to go down to his office to input it onto his computer. Instead of having to add more sheets of paper to an already stuffed clipboard, he uses an app on a tablet instead.</li>
+                <li>Open Application</li>
+                <li>Press plus button in bottom right corner</li>
+                <li>Fill out information in pop up dialog</li>
+                <li>Click done</li>
+                <li>Without Application: he would need to go to his computer. </li>
+            </ul>
+            <li>Selecting items to reorder</li>
+            <ul>
+                <li>Megan is completing her inventory and wants to be able to select the items she wants to reorder without having to take notes in the kitchen and dictate them into the ordering software. Instead she pulls out her app and is able to select the items to reorder with options for where to save them, including her computer.</li>
+                <li>Open application</li>
+                <li>Click checkmarks on items</li>
+                <li>(Optional) Save items to CSV / Email to Jeff</li>
+                <li>Without App- she would be sifting through paper, messily taking notes and becoming a safety concern in the kitchen. </li>
+            </ul>
+            <li>Find information about item in inventory</li>
+            <ul>
+                <li>Jeff found on the menu that chicken finger is going to be offered for ten meals next week but he’s not sure how much chicken finger he should prepare. He decides to add view the current inventory and order more if needed. </li>
+                <li>Open Application</li>
+                <li>Press on a row in the inventory table</li>
+                <li>View information about purveyor, expected amount and nutrition.  </li>
+                <li>Without App: Would have to mark down on paper what he wanted to do. Or leave the upstairs kitchen area and go downstairs to his computer.  Both would be extremely disruptive to his work flow. </li>
+            </ul>
+            <li>Save items to reorder as CSV file</li>
+            <ul>
+                <li>Megan is happy using her inventory checklist on her tablet. However she needs to export her is inventory to an external program, in order to share her updated inventory.</li>
+                <li>Open application</li>
+                <li>Press button</li>
+                <li>Press check mark</li>
+                <li>Save as CSV</li>
+                <li>Without App: She would have to write the inventory in excel, from a piece of paper. Then she would need to send the file to someone else. </li>
+            </ul>
+        </ul>
+        <h2>Appendix</h2>
+        <hr>
+        <h3>Documentation</h3>
+        <p>Throughout this phase we did documentation for our design in the forms of video, photo and paper prototype. However, we didn’t document as much for the designs that didn’t get used in the end as we did for our final prototype. Overall it was difficult to take proper documentation. Parts of our project changed over time, in modules. Little things, such as buttons changed. We did not capture every differece between the iterations very well.In the next phase we’ll mindfully keep a more holistic record of our design process.</p>
+        <img src="img/D5.jpg" width="600" height="350">
+        <p>This was a tablet design by Deniz Celik. It focused on how people interacted with tiles on the screen. It was an inventory and order manager. </p>
+        <img src="img/D6.JPG" width="600" height="350">
+        <p>This was an inventory and schedule manager. It was supposed to go on a iphone. It was later adapted to go onto a table, and this was the foundation of our final design- it was straightforward to use and helped solve a workflow problem with our user.</p>
+        <img src="img/D7.jpg" width="600" height="350">
+        <p>Web application that acts as a portal. Opening and inviting front page that invites people to explore. This was a design idea developed and drawn up by Hannah Wilk. The idea of an open inviting interface was brought into the final design. Material by google was a strong source of inspiration. </p>
+        <img src="img/D8.JPG" width="600" height="350">
+        <p>Some notes that came from our brainstorming that helped us decide what direction we wanted to go for our design. We want to highlight “Intuitive, matches workflow”,  “brings user through the experience”, and “Easy to Read Text Layout”. We focused on these because to us, and our user, this fulfilled our goal for the interface. We wanted to create an interface that makes it easy for the user to complete our tasks. That is done with an app that has flow, as well as easy to read. If it is difficult to read, nobody will look to see what the app is trying to do. </p>
+        <h2>How did everyone do?</h2>
+        <table class="table">
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>Deniz Celik</th>
+                <th>Jason Lan</th>
+                <th>Hannah Twigg-Smith</th>
+                <th>Hannah Wilk</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Script</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>Scenarios</td>
+                <td>25</td>
+                <td>25</td>
+                <td>25</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>Paper Prototype</td>
+                <td>10</td>
+                <td>10</td>
+                <td>40</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>Testing</td>
+                <td>15</td>
+                <td>15</td>
+                <td>35</td>
+                <td>35</td>
+              </tr>
+              <tr>
+                <td>Write Up</td>
+                <td>10</td>
+                <td>10</td>
+                <td>40</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>Website</td>
+                <td>35</td>
+                <td>65</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
 
       </ARTICLE>
         
